@@ -1,0 +1,242 @@
+*{
+    font-family: 'Rubik', sans-serif;
+  }
+  /*navbar*/
+  .navbar-brand {
+    color: #000 !important;
+    font-weight: 600;
+    font-size: 25px;
+  }
+  
+  .navbar a {
+    color: #000 !important;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    transition: color 0.3s ease-in;
+    font-weight: 500;
+    color: #A54C09 !important;
+    border-bottom: solid 2px #A54C09
+  }
+  
+  /*jumbotron*/
+  .jumbotron {
+    background-image: url(http://3.bp.blogspot.com/-WSDBZG1invE/UbDV46XFzRI/AAAAAAABTxM/4YnHZon_-Fo/s1600/spring4.jpg);
+    background-size: cover;
+    height: 640px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .jumbotron .display-4 {
+    color: #000;
+    text-align: center;
+    font-weight: 200;
+    font-size: 62px;
+  }
+  
+  .jumbotron .display-4 span {
+    font-weight: 500;
+  }
+  
+  .jumbotron .lead {
+    color: peru;
+    text-align: center;
+    font-weight: 450;
+  }
+  
+  .rounded-circle {
+    margin-top: 50px;
+  }
+  
+  /*about*/
+  .section-tittle{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  .section-tittle h2{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    position: relative;
+  }
+  
+  .about .about-content{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .about-text{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .about-text h3{
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  }
+  .about .about-content .about-text p{
+    font-size: 16px;
+    margin-bottom: 25px;
+    margin: 0;
+    }
+    .about .about-content .personal-info{
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+      max-width: 60%;
+      margin-top: 40px;
+    }
+    .about .about-content .skills{
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
+      margin-top: 40px;
+    }
+  
+  /* modifikasi sendiri */
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+   
+    padding: 90px 0;
+  }
+  
+  
+  /*  hidden */
+  .navbar.hidden {
+    background : peru;
+    color : #fff;
+  }
+  
+  .navbar a.hidden  {
+    color : #fff;
+  } 
+  
+  
+  /*  portofolio */
+  
+  .portofolio {
+    background: peru !important;
+    color: #fff;
+  }
+  
+  .portofolio .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  
+  .portofolio .pro-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .portofolio .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  .portofolio .pro-content .kartu {
+    width: calc(33% - 20px);
+    margin: 10px 0;
+    background: rgb(231, 148, 69);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .portofolio .pro-content .kartu:hover {
+    background: rgb(253, 128, 2);
+    transform: scale(1.1);
+  }
+  
+  .portofolio .pro-content .kotak {
+    transition: all ease 0.3s;
+  }
+  
+  .portofolio .pro-content .kotak:hover {
+    transform: scale(1.1);
+  }
+  
+  .portofolio .pro-content .kotak img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 20%;
+    border: solid #fff 6px;
+  }
+  
+  .portofolio .pro-content .kotak .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px 0 7px 0;
+    border-bottom: #fff solid 3px;
+  }
+  
+  .portofolio .pro-content p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  /* responsive */
+  @media (max-width: 947px) {
+    .portofolio .max-width {
+      max-width: 880px;
+    }
+  
+    .portofolio .pro-content .kartu {
+      width: calc(50% - 10px);
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+  
+    .portofolio .pro-content .kartu:hover {
+      background: rgb(253, 128, 2);
+      transform: scale(1.06);
+    }
+    .portofolio .pro-content .kotak:hover {
+      transform: scale(1.06);
+    }
+  }
+  
+  @media (max-width: 690px) {
+    .portofolio .max-width {
+      padding: 0 23px;
+    }
+  
+    .portofolio .pro-content .kartu {
+      width: 100%;
+      max-width: 20px 0;
+    }
+  
+    .portofolio .pro-content .kotak .text {
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 4px 0 6px 0;
+      border-bottom: #fff solid 2.5px;
+    }
+  }
+  
+  
